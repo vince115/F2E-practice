@@ -1,0 +1,417 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/ui.css">
+</head>
+
+<body>
+    <div id="root" class="">
+        <div class="bg-warning  h-100">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">#04 付款頁 Payment</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                    </ul>
+                   
+                </div>
+            </nav>
+            <div class="container-fluid" class="wrapper">
+                <div class="container-fluid ">
+                    <div class="row justify-content-center">
+                        <div class="text-center mt-3">
+                            <div class="card" style="width:60rem ;">
+                                <h2 id="heading" class="mt-3">購物車結帳 / Sopping Cart Payment</h2>
+                                <p>購物車結帳流程圖</p>
+                                <!--表單-->
+                                <form id="msform">
+                                    <div id="progressbar">
+                                        <ul>
+                                            <li id="account" class="active">
+                                                <strong>購物車/Cart</strong>
+                                            </li>
+                                            <li id="personal"><strong>交貨/Delivery</strong></li>
+                                            <li id="payment"><strong>支付/Payment</strong></li>
+                                            <li id="confirm"><strong>確認/Confirmation</strong></li>
+                                        </ul>
+                                    </div>
+                                    <!--#1. 購物車-->
+                                    <fieldset>
+                                        <div class="form-card">
+                                            <div class="row m-3">
+                                                <h6>訂單編號 : 17485739</h6>
+                                                <table class="table table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">#</th>
+                                                            <th scope="col"></th>
+                                                            <th scope="col">商品名</th>
+                                                            <th scope="col">品項/尺寸</th>
+                                                            <th scope="col">數量</th>
+                                                            <th class="text-right" scope="col">單價(新台幣 NT)</th>
+                                                            <th class="text-right" scope="col">小計(新台幣 NT)</th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td><img src="./imgs/img200x200.svg" alt="..."></td>
+                                                            <td class="align-middle">蔬菜箱</td>
+                                                            <td>
+                                                                <select class="form-select" aria-label="">
+                                                                    <option value="1">500 g</option>
+                                                                    <option value="2">1 kg</option>
+                                                                    <option value="3">2 kg</option>
+                                                                </select>
+                                                            </td>
+                                                            <td>
+                                                                <select class="form-select">
+                                                                    <option value="1" selected>1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="3">4</option>
+                                                                    <option value="3">5</option>
+                                                                    <option value="3">6</option>
+                                                                </select>
+                                                            </td>
+                                                            <td class="text-right"> 500</td>
+                                                            <td class="text-right"> 500xn</td>
+                                                            <td class="text-center">
+                                                                <span class="btn btn-circle btn-sm">
+                                                                    <i class="fa fa-close text-secondary"></i>
+                                                                </span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">2</th>
+                                                            <td><img src="./imgs/img200x200.svg" alt="..."></td>
+                                                            <td class="align-middle">T桖 / T-shirt </td>
+                                                            <td>
+                                                                <select class="form-select" aria-label="">
+                                                                    <option value="1">S</option>
+                                                                    <option value="2">M</option>
+                                                                    <option value="L" selected>L</option>
+                                                                    <option value="XL">XL</option>
+                                                                    <option value="2L">2L</option>
+                                                                </select>
+                                                            </td>
+                                                            <td>
+                                                                <select class="form-select">
+                                                                    <option value="1" selected>1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="3">4</option>
+                                                                    <option value="3">5</option>
+                                                                    <option value="3">6</option>
+                                                                </select>
+                                                            </td>
+                                                            <td class="text-right">600</td>
+                                                            <td class="text-right"> 600xn</td>
+                                                            <td class="text-center">
+                                                                <span class="btn btn-circle btn-sm">
+                                                                    <i class="fa fa-close text-secondary"></i>
+                                                                </span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">3</th>
+                                                            <td><img src="./imgs/img200x200.svg" alt="..."></td>
+                                                            <td>可口可樂飲料</td>
+                                                            <td><select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option value="1">易開罐330ml(24入)</option>
+                                                                    <option value="2">600ml(24入/箱)</option>
+                                                                    <option value="3" selected>2000ml(6瓶/箱)</option>
+                                                                </select></td>
+                                                            <td>
+                                                                <select class="form-select">
+                                                                    <option value="1" selected>1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="3">4</option>
+                                                                    <option value="3">5</option>
+                                                                    <option value="3">6</option>
+                                                                </select>
+                                                            </td>
+                                                            <td class="text-right">700</td>
+                                                            <td class="text-right">700xn</td>
+                                                            <td class="text-center">
+                                                                <span class="btn btn-circle btn-sm">
+                                                                    <i class="fa fa-close text-secondary"></i>
+                                                                </span>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <td class="text-right pb-0" colspan="6">小計 :</td>
+                                                            <td class="text-right pb-0"> 2300</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-right border-0" colspan="6"> 運費 :</td>
+                                                            <td class="text-right border-0"> 80</td>
+                                                            <td class="border-0"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-right" colspan="6"> 總計 :</td>
+                                                            <td class="text-right"> 2380</td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="next btn btn btn-success">下一步 / Next</button>
+                                    </fieldset>
+                                    <!--#2. 交貨-->
+                                    <fieldset>
+                                        <div class="form-card mx-5">
+                                            <h5 class="text-danger">訂購人資訊</h5>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="inputEmail4">Email</label>
+                                                    <input type="email" class="form-control" id="inputEmail4"
+                                                        placeholder="Email">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="inputPassword4">Password</label>
+                                                    <input type="password" class="form-control" id="inputPassword4"
+                                                        placeholder="Password">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="inputEmail4">姓名</label>
+                                                    <input type="text" class="form-control" id="inputEmail4"
+                                                        placeholder="請填寫真實姓名">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="inputPassword4">手機</label>
+                                                    <input type="tel" class="form-control" id="inputPassword4"
+                                                        placeholder="請填寫手機號碼">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="row  col-12 ml-1 mr-0">
+                                                    <label for="inputEmail4">地址</label>
+                                                </div>
+                                                <div class="row col-12 m-0 p-0">
+                                                    <div class="col-3">
+                                                        <input type="text" class="form-control" id="inputEmail4"
+                                                            placeholder="郵遞區號">
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <input type="tel" class="form-control" id="inputPassword4"
+                                                            placeholder="例: 台北市內湖區民權東路六段XX巷XX弄XX號X樓">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br />
+                                            <hr />
+                                            <h5 class="text-danger">收件人資訊</h5>
+                                            <div class="row mx-0 col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input position-static" type="checkbox"
+                                                        id="blankCheckbox" value="option1" aria-label="...">
+
+                                                </div>
+                                                <label>同訂購人資料</label>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="inputEmail4">姓名</label>
+                                                    <input type="text" class="form-control" id="inputEmail4"
+                                                        placeholder="請填寫真實姓名">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="inputPassword4">手機</label>
+                                                    <input type="tel" class="form-control" id="inputPassword4"
+                                                        placeholder="請填寫手機號碼">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="row  col-12 ml-1 mr-0">
+                                                    <label for="inputEmail4">地址</label>
+                                                </div>
+                                                <div class="row col-12 m-0 p-0">
+                                                    <div class="col-3">
+                                                        <input type="text" class="form-control" id="inputEmail4"
+                                                            placeholder="郵遞區號">
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <input type="text" class="form-control" id="inputPassword4"
+                                                            placeholder="例: 台北市內湖區民權東路六段XX巷XX弄XX號X樓">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mx-0">
+                                                <label for="inputEmail4">備註</label>
+                                                <input type="text" class="form-control" id="inputPassword4"
+                                                    placeholder="">
+                                            </div>
+                                            <br />
+
+                                        </div>
+                                        <button type="button" class="previous btn btn btn-danger">上一步 /
+                                            Previous</button>
+                                        <button type="button" class="next btn btn btn-success">下一步 / Next</button>
+                                    </fieldset>
+                                    <!--#3. 支付-->
+                                    <fieldset>
+                                        <h5 class="text-danger font-weight-bold">付款方式</h5>
+                                        <div class="form-card">
+                                            <div class="row mt-2">
+                                                <div class="col-sm-6">
+                                                    <div class="card border bg-warning">
+                                                        <div class="card-body ml-4">
+                                                            <input class="form-check-input float-left" type="radio"
+                                                                name="payment" id="pay01" checked>
+                                                            <span class="float-left mt-1 ml-1">
+                                                                <i class="fa fa-credit-card-alt text-light text-shadow"
+                                                                    aria-hidden="true"></i>
+                                                            </span>
+                                                            <h6
+                                                                class="card-text float-left mt-1 ml-3 text-light text-shadow">
+                                                                信用卡付清</h6>
+                                                            <small
+                                                                class="text-muted float-right mt-3">VISA、MasterCard、JCB</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="card border">
+                                                        <div class="card-body ml-4">
+                                                            <input class="form-check-input float-left" type="radio"
+                                                                name="payment" id="pay02">
+                                                            <span class="float-left mt-1 ml-1">
+                                                                <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                                                            </span>
+                                                            <h6 class="card-text float-left mt-1 ml-3">信用卡分期</h6>
+                                                            <small
+                                                                class="text-muted float-right mt-3">(限玉山，分期三個月)</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="card border">
+                                                        <div class="card-body ml-4">
+                                                            <input class="form-check-input float-left" type="radio"
+                                                                name="payment" id="pay02">
+                                                            <span class="float-left mt-1 ml-1">
+                                                                <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                                                            </span>
+                                                            <h6 class="card-text float-left mt-1 ml-3">超商付款</h6>
+                                                            <small class="text-muted float-right mt-3">(全家、萊爾富)</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="card border">
+                                                        <div class="card-body ml-4">
+                                                            <input class="form-check-input float-left" type="radio"
+                                                                name="payment" id="pay02">
+                                                            <span class="float-left mt-1 ml-1">
+                                                                <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                                                            </span>
+                                                            <h6 class="card-text float-left mt-1 ml-3">Web ATM</h6>
+                                                            <small class="text-muted float-right mt-3">(線上ATM轉帳)</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="card border">
+                                                        <div class="card-body ml-4">
+                                                            <input class="form-check-input float-left" type="radio"
+                                                                name="payment" id="pay02">
+                                                            <span class="float-left mt-1 ml-1">
+                                                                <i class="fa fa-paypal" aria-hidden="true"></i>
+                                                            </span>
+                                                            <h6 class="card-text float-left mt-1 ml-3">Paypal</h6>
+                                                            <small class="text-muted float-right mt-3">( Paypal支付
+                                                                )</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card border">
+                                                        <div class="card-body ml-4">
+                                                            <input class="form-check-input float-left" type="radio"
+                                                                name="payment" id="pay02">
+                                                            <span class="float-left mt-1 ml-1">
+                                                                <i class="fa fa-shopping-bag text-danger"
+                                                                    aria-hidden="true"></i>
+                                                            </span>
+                                                            <h6 class="card-text float-left mt-1 ml-3">街口支付</h6>
+                                                            <small class="text-muted float-right mt-3"></small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <hr />
+                                        <button type="button" class="previous btn btn btn-danger">上一步 /
+                                            Previous</button>
+                                        <button type="button" class="next btn btn-success">下一步 / Next</button>
+                                    </fieldset>
+                                    <!--#4. 確認-->
+                                    <fieldset>
+                                        <div class="form-card">
+                                            <p class="ml-2">您的訂單編號為:<span
+                                                    class="text-danger font-weight-bold">#2308</span>，恭喜您付款完成。</p>
+                                            <div class="alert alert-success" role="alert">
+                                                付款完成資訊已經寄送到您的會員信箱，關於[取貨進度]或是[交易明細]都可以前往[訂單查詢]頁面查詢。
+                                            </div>
+                                            <h2 class="text-success text-center text-weight-bold">SUCCESS !</h2> <br>
+                                            <div class="row justify-content-center">
+                                                <span><i class="fa fa-check fa-5x text-success"></i></span>
+                                            </div>
+                                            <br />
+
+                                        </div>
+                                        <hr />
+                                        <button type="button" class="btn btn-warning">訂單查詢</button>
+                                        <button type="button" class="btn btn-success">返回商店</button>
+
+
+                                    </fieldset>
+                                </form>
+                                <!--表單-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <script type="text/javascript" src="./js/vendor/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="./js/ui.js"></script>
+
+    </div>
+</body>
+
+
+</html>
