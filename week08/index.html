@@ -1,0 +1,362 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/ui.css">
+</head>
+
+<body>
+    <div id="root" class="">
+        <div class="bg-light  h-100">
+            <!-- Header -->
+            <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">#08 雲端硬碟 </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </header>
+
+            <!-- Container -->
+            <div class="container-fluid" class="wrapper">
+                <!--Sidebar-->
+                <nav id="sidebar" class="bg-info h-100">
+                    <div class="sidebar-header">
+                        <h3 class="text-light p-4"><i class="fa fa-cloud mr-3"></i>MyCloud.</h3>
+                        <p class="text-center mt-3"><button type="button" class="btn btn-light px-5 py-2 text-info"><i
+                                    class="fa fa-upload mr-3"></i>上傳檔案</button></p>
+                    </div>
+                    <div class="sidebar-body h-75">
+                        <ul class="list-group pl-3">
+                            <li class="list-group-item bg-info border-0">
+                                <a class="d-flex text-light" href="#">
+                                    <span class="mt-1 mr-3"><i class="fa fa-folder-open"></i></span>
+                                    <h5>我的檔案</h5>
+                                </a>
+                            </li>
+                            <li class="list-group-item bg-info border-0">
+                                <a class="d-flex text-light" href="#">
+                                    <span class="mt-1 mr-3"><i class="fa fa-star"></i></span>
+                                    <h5>已加星號</h5>
+                                </a>
+                            </li>
+                            <li class="list-group-item bg-info border-0">
+                                <a class="d-flex text-light" href="#">
+                                    <span class="mt-1 mr-3"><i class="fa fa-share-alt"></i></span>
+                                    <h5>檔案共享</h5>
+                                </a>
+                            </li>
+                            <li class="list-group-item bg-info border-0">
+                                <a class="d-flex text-light" href="#">
+                                    <span class="mt-1 mr-3"><i class="fa fa-trash"></i></span>
+                                    <h5>垃圾桶</h5>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="sidebar-footer">
+                        <div id="user-info">
+                            <div id="user-icon" class="user-circle bg-primary">
+                                <img src="./img/user.jpg" alt="Vincent" class="img-circle" >
+                            </div>
+                            <h4 class="text-light">Vincent</h4>
+                            <h6 class="text-light">User</h6>
+
+                        </div>
+                        <div class="progress ml-3">
+                            <div class="progress-bar bg-primary " role="progressbar" style="width: 60%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="text-center mt-3">
+                            <h5 class="text-light ">容量1.2GB/10GB</h5>
+                        </div>
+
+                    </div>
+                </nav>
+
+                <!-- Page Content -->
+                <div id="content" >
+
+                    <nav class="navbar navbar-light bg-light justify-content-between">
+                        <a class="navbar-brand"></a>
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="搜尋您的檔案" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜尋</button>
+                        </form>
+                    </nav>
+
+                    <div class="container-fluid  px-5">
+                        <div class="d-flex py-2">
+                            <div>
+                                <h5 class="font-weight-bold">我的檔案</h5>
+                            </div>
+                            <div class="ml-auto"><button class="btn btn-primary text-right">看更多</button></div>
+                        </div>
+                        <table class="table table-hover ">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col" style="width:3rem"></th>
+                                    <th scope="col">名稱</th>
+                                    <th scope="col">上次修改</th>
+                                    <th scope="col">檔案大小</th>
+                                    <th scope="col">擁有者</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td><span><i class="fa  fa-file text-warning text-center"> mp4</i></span></td>
+                                    <td>走吧!一起用日語去旅行.mp4</td>
+                                    <td>2019/6/10</td>
+                                    <td>6.3MB</td>
+                                    <td>Vincent</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-light dropdown-toggle" type="button"
+                                                id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <i class="fa  fa-ellipsis-h"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <button class="dropdown-item" type="button">共享</button>
+                                                <button class="dropdown-item" type="button">下載</button>
+                                                <button class="dropdown-item" type="button">標示星號</button>
+                                                <button class="dropdown-item" type="button">重新命名</button>
+                                                <button class="dropdown-item" type="button">移動</button>
+                                                <button class="dropdown-item" type="button">複製</button>
+                                                <button class="dropdown-item" type="button">刪除</button>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td><span><i class="fa  fa-file text-primary text-center"> doc</i></span></td>
+                                    <td>日本東京自由行.doc</td>
+                                    <td>2019/6/10</td>
+                                    <td>3.8MB</td>
+                                    <td>Vincent</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-light dropdown-toggle" type="button"
+                                                id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <i class="fa  fa-ellipsis-h"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <button class="dropdown-item" type="button">共享</button>
+                                                <button class="dropdown-item" type="button">下載</button>
+                                                <button class="dropdown-item" type="button">標示星號</button>
+                                                <button class="dropdown-item" type="button">重新命名</button>
+                                                <button class="dropdown-item" type="button">移動</button>
+                                                <button class="dropdown-item" type="button">複製</button>
+                                                <button class="dropdown-item" type="button">刪除</button>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td><span><i class="fa  fa-file text-danger text-center"> pdf</i></span></td>
+                                    <td>東京都內案內手冊.pdf</td>
+                                    <td>2019/6/10</td>
+                                    <td>3.8MB</td>
+                                    <td>Vincent</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-light dropdown-toggle" type="button"
+                                                id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <i class="fa  fa-ellipsis-h"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <button class="dropdown-item" type="button">共享</button>
+                                                <button class="dropdown-item" type="button">下載</button>
+                                                <button class="dropdown-item" type="button">標示星號</button>
+                                                <button class="dropdown-item" type="button">重新命名</button>
+                                                <button class="dropdown-item" type="button">移動</button>
+                                                <button class="dropdown-item" type="button">複製</button>
+                                                <button class="dropdown-item" type="button">刪除</button>
+                                            </div>
+                                        </div>
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td><span><i class="fa  fa-file text-success text-center"> png</i></span></td>
+                                    <td>成田機場綠色窗口位置.png</td>
+                                    <td>2019/6/10</td>
+                                    <td>3.8MB</td>
+                                    <td>Vincent</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-light dropdown-toggle" type="button"
+                                                id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <i class="fa  fa-ellipsis-h"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <button class="dropdown-item" type="button">共享</button>
+                                                <button class="dropdown-item" type="button">下載</button>
+                                                <button class="dropdown-item" type="button">標示星號</button>
+                                                <button class="dropdown-item" type="button">重新命名</button>
+                                                <button class="dropdown-item" type="button">移動</button>
+                                                <button class="dropdown-item" type="button">複製</button>
+                                                <button class="dropdown-item" type="button">刪除</button>
+                                            </div>
+                                        </div>
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td><span><i class="fa  fa-folder text-info "></i></span> </td>
+                                    <td>工作相關</td>
+                                    <td>2019/6/10</td>
+                                    <td>3.8MB</td>
+                                    <td>Vincent</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-light dropdown-toggle" type="button"
+                                                id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <i class="fa  fa-ellipsis-h"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <button class="dropdown-item" type="button">共享</button>
+                                                <button class="dropdown-item" type="button">下載</button>
+                                                <button class="dropdown-item" type="button">標示星號</button>
+                                                <button class="dropdown-item" type="button">重新命名</button>
+                                                <button class="dropdown-item" type="button">移動</button>
+                                                <button class="dropdown-item" type="button">複製</button>
+                                                <button class="dropdown-item" type="button">刪除</button>
+                                            </div>
+                                        </div>
+                                    </td>
+
+
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td><span><i class="fa  fa-folder text-info "></i></span> </td>
+                                    <td>工作相關</td>
+                                    <td>2019/6/10</td>
+                                    <td>3.8MB</td>
+                                    <td>Vincent</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-light dropdown-toggle" type="button"
+                                                id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <i class="fa  fa-ellipsis-h"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <button class="dropdown-item" type="button">共享</button>
+                                                <button class="dropdown-item" type="button">下載</button>
+                                                <button class="dropdown-item" type="button">標示星號</button>
+                                                <button class="dropdown-item" type="button">重新命名</button>
+                                                <button class="dropdown-item" type="button">移動</button>
+                                                <button class="dropdown-item" type="button">複製</button>
+                                                <button class="dropdown-item" type="button">刪除</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br />
+                        <hr />
+                        <div class="d-flex py-2">
+                            <div>
+                                <h5 class="font-weight-bold">檔案共享</h5>
+                            </div>
+                            <div class="ml-auto"><button class="btn btn-primary text-right">看更多</button></div>
+                        </div>
+                        <table class="table table-hover ">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col" style="width:3rem"></th>
+                                    <th scope="col">名稱</th>
+                                    <th scope="col">上次修改</th>
+                                    <th scope="col">檔案大小</th>
+                                    <th scope="col">擁有者</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td><span><i class="fa  fa-file text-danger text-center"> pdf</i></span></td>
+                                    <td>iOS14指南.pdf</td>
+                                    <td>2020/6/10</td>
+                                    <td>6.3MB</td>
+                                    <td>Vincent</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-light dropdown-toggle" type="button"
+                                                id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <i class="fa  fa-ellipsis-h"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <button class="dropdown-item" type="button">共享</button>
+                                                <button class="dropdown-item" type="button">下載</button>
+                                                <button class="dropdown-item" type="button">標示星號</button>
+                                                <button class="dropdown-item" type="button">重新命名</button>
+                                                <button class="dropdown-item" type="button">移動</button>
+                                                <button class="dropdown-item" type="button">複製</button>
+                                                <button class="dropdown-item" type="button">刪除</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+
+
+
+                </div>
+                <!-- Page Content -->
+            </div>
+
+
+            <!-- Footer -->
+            <footer class="bg-dark text-center text-white">
+
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2021 Copyright:
+                    <a class="text-white" href="https://vince115.github.io/">vince115.github.io</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+
+        </div>
+
+        <script type="text/javascript" src="./js/vendor/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="./js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./js/vendor/bootstrap.bundle.js"></script>
+        <script type="text/javascript" src="./js/ui.js"></script>
+
+    </div>
+</body>
+
+
+</html>

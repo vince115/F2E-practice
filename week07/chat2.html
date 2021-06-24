@@ -1,0 +1,128 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/chat.css">
+</head>
+
+<body>
+    <div id="root" class="">
+        <div class="bg-light h-100">
+            <!-- Header -->
+            <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="index.html">#07 匿名聊天室 Anonymous Chat Room</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link disabled" href="#">Disabled</a>
+                      </li>
+                  </ul>
+                 
+              </div>
+            </header>
+
+
+            <!-- Container -->
+            <div class="container-fluid h-75 chat">
+                <div class="mt-5">
+                    <!--Chat Room-->
+                    <div class="chat-history">
+                        <ul>
+                          <li class="clearfix">
+                            <div class="message-data ">
+                              <span class="message-data-time">10:10 AM, Today</span> &nbsp; &nbsp;
+                              <span class="message-data-name">Olia</span> <i class="fa fa-circle me"></i>
+                            </div>
+                            <div class="message other-message float-right">
+                              Hi Vincent, how are you? How is the project coming along?
+                            </div>
+                          </li>
+                          
+                          <li>
+                            <div class="message-data">
+                              <span class="message-data-name"><i class="fa fa-circle online"></i> Vincent</span>
+                              <span class="message-data-time">10:12 AM, Today</span>
+                            </div>
+                            <div class="message my-message">
+                              Are we meeting today? Project has been already finished and I have results to show you.
+                            </div>
+                          </li>
+                          
+                          <li class="clearfix">
+                            <div class="message-data align-right">
+                              <span class="message-data-time">10:14 AM, Today</span> &nbsp; &nbsp;
+                              <span class="message-data-name">Olia</span> <i class="fa fa-circle me"></i>
+                              
+                            </div>
+                            <div class="message other-message float-right">
+                              Well I am not sure. The rest of the team is not here yet. Maybe in an hour or so? Have you faced any problems at the last phase of the project?
+                            </div>
+                          </li>
+                          
+                          <li>
+                            <div class="message-data">
+                              <span class="message-data-name"><i class="fa fa-circle online"></i> Vincent</span>
+                              <span class="message-data-time">10:20 AM, Today</span>
+                            </div>
+                            <div class="message my-message">
+                              Actually everything was fine. I'm very excited to show this to our team.
+                            </div>
+                          </li>
+                          
+                          <li>
+                            <div class="message-data">
+                              <span class="message-data-name"><i class="fa fa-circle online"></i> Vincent</span>
+                              <span class="message-data-time">10:31 AM, Today</span>
+                            </div>
+                            <i class="fa fa-circle online"></i>
+                            <i class="fa fa-circle online" style="color: #AED2A6"></i>
+                            <i class="fa fa-circle online" style="color:#DAE9DA"></i>
+                          </li>
+                          
+                        </ul>
+                        
+                      </div>
+                    <!--Chat Room-->
+
+
+                </div>
+            </div>
+
+
+
+
+            <!-- Footer -->
+            <footer class="bg-dark text-center text-white w-100" style="position: fixed;bottom: 0;">
+                <!-- Section: Social media -->
+                <section class="d-flex justify-content-center justify-content-between p-3" >
+                    <input id="send-msg" placeholder="說什麼..." type="text" class="form-control mr-2 bg-light text-dark" style="height: 48px;" name="send_msg" maxlength="512">
+                    <span class="input-group-btn no-padding"><a id="send-btn" class="btn btn-lg btn-primary btn-bold btn-round pt-2" style="height: 48px;" ><i class="fa fa-paper-plane"></i></a></span>
+                </section>
+                <!-- Section: Social media -->
+               
+            </footer>
+            <!-- Footer -->
+
+        </div>
+
+        <script type="text/javascript" src="./js/vendor/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="./js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./js/ui.js"></script>
+       
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,73 @@
+.container-fluid{
+    padding:0 ;
+}
+#sidebar {
+    overflow: hidden;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    width: 20rem;
+}
+
+
+.sidebar-footer{
+    float:left;
+    position: relative;
+    bottom: 18rem;
+}
+.user-circle{
+    width: 64px;
+    height: 64px;
+    padding: 7px 10px;
+    border-radius: 32px;
+    font-size: 10px;
+    text-align: center;
+}
+.progress{
+    width: 18rem;
+    height: 10px
+}
+
+#user-info h4{
+    display: inline-block;
+    position:relative;
+    top:-40px;
+    left:50px;
+}
+#user-info h6{
+    display: inline-block;
+    position:relative;
+    top:-10px;
+    left:-30px;
+}
+#user-icon{
+    display: inline-block;
+    position:relative;
+    top:-30px;
+    left:30px;
+    margin: 0;
+    padding: 0;
+}
+#content{
+    margin-left: 20rem;
+    padding: 0px;
+    background-color: white;
+}
+
+footer{
+    display: block;
+    float: left;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+   
+    z-index: 99;
+}
+table.table-hover tbody tr:hover{
+    background-color: azure;
+}
+.img-circle{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
